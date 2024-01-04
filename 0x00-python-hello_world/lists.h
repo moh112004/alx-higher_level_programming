@@ -5,9 +5,8 @@
 
 /**
  * struct listint_s - singly linked list
- * @a: An integer
- * @b: Points to kthe next node
- *
+ * @a: integer
+ * @b: points to the next node
  */
 typedef struct listint_s
 {
