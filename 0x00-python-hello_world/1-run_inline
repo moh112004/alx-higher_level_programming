@@ -1,3 +1,2 @@
 #!/bin/bash
 python3 -c "import os; exec(os.environ['PYCODE'])"
-
