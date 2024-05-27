@@ -1,11 +1,12 @@
 #!/usr/bin/node
-function prints(args){
-if (args.slice(2).length === 0)
-	console.log("No argument");
-if (args.slice(2).length === 1)
-	console.log("Argument found");
-if (args.slice(2).length > 1)
-	console.log("Arguments found");
+//Check number of arguments passed
+
+if (process.argv.length === 2) {
+   console.log('No argument');
 }
-const args = process.argv;
-prints(args);
+else if (process.argv.length === 3) {
+     console.log('Argument found');
+}
+else {
+       console.log('Arguments found');
+}
