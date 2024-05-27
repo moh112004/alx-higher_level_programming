@@ -1,9 +1,9 @@
 #!/usr/bin/node
-//Prints value of argument if passed
-const args = process.argv.slice(2);
-if (args.join('') === '') {
-	console.log("No argument");
+// prints the first argument passed to it
+
+if (process.argv[2] === undefined) {
+   console.log('No argument');
 }
 else {
-	console.log(process.argv.slice(2)[0]);
+    console.log(process.argv[2]);
 }
